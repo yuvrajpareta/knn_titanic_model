@@ -23,7 +23,7 @@ def predict():
     For rendering results on HTML GUI
     '''
     P = float(request.args.get('P'))
-    Sex = request.args.get('Sex')
+    Sex = float(request.args.get('Sex'))
     Age = float(request.args.get('Age'))
     Sibsp = float(request.args.get('Sibsp'))
     Par = float(request.args.get('Par'))
