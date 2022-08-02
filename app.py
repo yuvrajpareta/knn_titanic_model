@@ -36,5 +36,6 @@ def predict():
       return render_template('index.html',prediction_text='ups! person not survived')
     else:
       return render_template('index.html',prediction_text='ooh yee! person  survived')
-
-app.run()
+    
+if __name__=="__main__":
+  app.run(debug=True)
